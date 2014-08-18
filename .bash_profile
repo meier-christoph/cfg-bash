@@ -4,9 +4,12 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# Docker (boot2docker)
+export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
+
 # Java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home"
-#export JAVA_HOME="/usr/libexec/java_home -v 1.7"
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home"
+export JAVA_HOME="/usr/libexec/java_home -v 1.7"
 
 # Homebrew
 export PATH="/usr/local/bin:$PATH" 
