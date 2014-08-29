@@ -13,6 +13,7 @@ alias drmi='docker rmi'
 # Terminal
 alias ll='ls -lrt'
 alias la='ls -lrta'
+alias ld='ll | grep ^d'
 
 alias h='history'
 
