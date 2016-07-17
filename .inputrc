@@ -1,0 +1,10 @@
+### show all
+set show-all-if-ambigous on
+set show-all-if-unmodified on
+
+### ignore case
+set completion-ignore-case on
+
+### bash history completion
+"\e[A": history-search-backward
+"\e[B": history-search-forward
