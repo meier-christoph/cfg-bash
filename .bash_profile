@@ -6,6 +6,13 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export EDITOR=subl
 export COPYFILE_DISABLE=1
 
+# Homebrew
+export PATH="/usr/local/bin:$PATH"
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+	. $(brew --prefix)/etc/bash_completion
+fi
+
 # Docker
 if [ -z "$DOCKER_MACHINE_NAME" ]; then
   eval "$(docker-machine env local)"
@@ -21,12 +28,8 @@ if [ -f $(brew --prefix nvm)/nvm.sh ]; then
   export NVM_DIR=~/.nvm
 fi
 
-# Homebrew
-export PATH="/usr/local/bin:$PATH"
-
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-	. $(brew --prefix)/etc/bash_completion
-fi
+# Ruby
+eval "$(rbenv init -)"
 
 # Aliases
 source ~/.bash_alias

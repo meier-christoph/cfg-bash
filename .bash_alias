@@ -2,6 +2,7 @@
 
 # git
 alias g='git'
+alias gg='ls | xargs -t -I{} git -C {} $@'
 
 # Docker
 alias d='docker'
