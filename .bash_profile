@@ -23,6 +23,9 @@ export PATH=~/bin:$PATH
 export GOPATH=$HOME/dev/go
 export PATH=$GOPATH/bin:$PATH
 
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
@@ -49,4 +52,3 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 syspip() {
   PIP_REQUIRE_VIRTUALENV="" pip "$@"
 }
-
